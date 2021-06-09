@@ -4,6 +4,7 @@ import subprocess as subp
 import platform
 from time import sleep
 
+
 if platform.python_version() >= '3':
     pass
 else:
@@ -32,10 +33,10 @@ if os.path.exists('/usr/'):
             linea = linea.rstrip()
             if re.search('http:', linea):
                 linea = linea.split(' ')
-                url_flask = linea[4]
-                print('Enlace Flask: '+url_flask)
+                flask_url = linea[4]
+                print('Enlace Flask: '+flask_url)
+                web.open(flask_url)
         url.close()
-        web.open(url_flask)
         input('Enter para cancelar el servidor...\n')
         subproceso.terminate()
     conexion_flask()
@@ -46,7 +47,7 @@ elif os.path.exists(r'C:\Users'):
     def conexion_flask():
         tam_archivo = os.path.getsize('logs.log')
         if tam_archivo > 0:
-            os.system('rm logs.log')
+            os.system('del /s /q logs.log')
         else:
             pass
         print('Iniciando Servidor Flask...')
@@ -62,10 +63,10 @@ elif os.path.exists(r'C:\Users'):
             linea = linea.rstrip()
             if re.search('http:', linea):
                 linea = linea.split(' ')
-                url_flask = linea[4]
-                print('Enlace Flask: '+url_flask)
+                flask_url = linea[4]
+                print('Enlace Flask: '+flask_url)
+                web.open(flask_url)
         url.close()
-        web.open(url_flask)
         input('Enter para cancelar el servidor...\n')
         subproceso.terminate()
     conexion_flask()
@@ -73,6 +74,7 @@ elif os.path.exists('/data/data/com.termux/files/home'):
     print('Ejecutando en Termux...')
     sleep(1.5)
     def conexion_flask():
+        global flask_url
         tam_archivo = os.path.getsize('logs.log')
         if tam_archivo > 0:
             os.system('rm logs.log')
@@ -83,7 +85,6 @@ elif os.path.exists('/data/data/com.termux/files/home'):
         url_flask = open('logs.log','w')
         subproceso = subp.Popen(['python3', 'main.py'], stderr=url_flask, stdout=url_flask)
         url_flask.close()
-
         print("Obteniendo enlace...")
         sleep(3)
         url = open('logs.log','r')
@@ -91,10 +92,10 @@ elif os.path.exists('/data/data/com.termux/files/home'):
             linea = linea.rstrip()
             if re.search('http:', linea):
                 linea = linea.split(' ')
-                url_flask = linea[4]
-                print('Enlace Flask: '+url_flask)
-        url.close()
-        os.system('termux-open '+url_flask)        
+                flask_url = linea[4]
+                print('Enlace Flask: '+flask_url)
+                web.open(flask_url)
+        url.close()      
         input('Enter para cancelar el servidor...\n')
         subproceso.terminate()
     conexion_flask()
