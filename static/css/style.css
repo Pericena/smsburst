@@ -1,0 +1,101 @@
+
+
+body {
+  background-color:#564a4a;
+  color:#4aa96c;
+	
+}
+
+.icon{
+ width:300px;
+     height:141px;
+}
+.cel{
+	width: 250px;
+	padding: 8px 20px;
+	margin: 2px;
+	box-sizing: border-box;
+	border: none;
+  border-radius: 8px;
+	border-bottom: 1px solid #ffd369;
+	transition: width 0.2s ease-in-out;
+	background-color:#eeeeee;
+	font-size:20px;
+	text-align: center;
+  color:#564a4a;
+	
+}
+
+.sms{
+    width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.2s ease-in-out;
+  border: none;
+  border-radius: 8px;
+	background-color:#eeeeee;
+	font-size:20px;
+	border-style: outset;
+	text-align: center;
+	color:#564a4a;
+	padding: 30px 0px;
+	
+	
+  
+}
+input[type=text]:focus {
+  width: 100%;
+}
+input[type=tel]:focus {
+  width: 100%;
+}
+.btn{
+  text-align: center;
+  background-color: #eba83a;
+  border: none;
+  color: white;
+  padding: 16px 85px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size:25px;
+  margin: 10px;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  
+ 
+}
+.btn input:hover {
+ background-color: red;
+}
+.texto{
+  text-align: left;
+ 
+}
+
+.titulo{
+  color: white;
+  text-align: center;
+   font-size:80px;
+   text-shadow: 2px 2px 5px red;
+   font-family: 'Brush Script MT', cursive;
+   font-weight: bold;
+  
+}
+p{
+  margin: auto;
+  font-size:20px;
+  color: white;
+}
+.formu{
+   width: 300px;
+  margin: auto;
+  font-size:20px;
+  color: white;
+}
