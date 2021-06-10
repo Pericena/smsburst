@@ -11,3 +11,19 @@ Python3
 - pip install requests
 ```
 
+## GNU/LINUX
+```
+sudo apt install python3
+sudo apt install python3-pip
+python3 -m pip install --upgrade pip
+pip3 install flask
+pip3 install requests
+```
+
+## Termux
+```
+apt install python
+python3 -m pip install --upgrade pip
+pip3 install flask
+pip3 install flask
+```
