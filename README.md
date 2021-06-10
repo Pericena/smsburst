@@ -25,5 +25,5 @@ pip3 install requests
 apt install python
 python3 -m pip install --upgrade pip
 pip3 install flask
-pip3 install flask
+pip3 install requests
 ```
