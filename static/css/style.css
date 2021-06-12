@@ -1,26 +1,30 @@
 
-
 body {
-  background-color:#564a4a;
-  color:#4aa96c;
-	
+ background-color:#141e30;
+  color:#f7630c;
+  margin:0;
+  padding:0;
 }
 
 .icon{
- width:300px;
-     height:141px;
+    width:150px;
+     height:150px;
+    	text-align:center;
+}
+a{
+  color:#ffb900;
 }
 .cel{
 	width: 250px;
 	padding: 8px 20px;
-	margin: 2px;
+	margin: 1px;
 	box-sizing: border-box;
 	border: none;
   border-radius: 8px;
 	border-bottom: 1px solid #ffd369;
 	transition: width 0.2s ease-in-out;
 	background-color:#eeeeee;
-	font-size:20px;
+	font-size:18px;
 	text-align: center;
   color:#564a4a;
 	
@@ -33,16 +37,16 @@ body {
   background-color: white;
   background-position: 10px 10px; 
   background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
+  padding: 12px 20px 12px 20px;
   transition: width 0.2s ease-in-out;
   border: none;
   border-radius: 8px;
 	background-color:#eeeeee;
-	font-size:20px;
+	font-size:18px;
 	border-style: outset;
 	text-align: center;
 	color:#564a4a;
-	padding: 30px 0px;
+	padding: 12px 0px;
 	
 	
   
@@ -55,16 +59,15 @@ input[type=tel]:focus {
 }
 .btn{
   text-align: center;
-  background-color: #eba83a;
+  background-color: #ffb900;
   border: none;
   color: white;
-  padding: 16px 85px;
+  padding: 8px 85px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
   font-size:25px;
-  margin: 10px;
   font-weight: bold;
   display: block;
   text-decoration: none;
@@ -72,25 +75,69 @@ input[type=tel]:focus {
  
 }
 .btn input:hover {
- background-color: red;
-}
-.texto{
-  text-align: left;
- 
+ background-color: #fa4235;
 }
 
+
+.texto{
+  text-align: center;
+ 
+}
+h2{
+  text-align: center;
+  font-size:15px;
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: center;
+
+}
+.atras{
+  text-align: center;
+  cursor:pointer;
+  background-color: #ffb900;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size:14px;
+  font-weight: bold;
+  margin: auto;
+ 
+
+}
 .titulo{
   color: white;
   text-align: center;
-   font-size:80px;
-   text-shadow: 2px 2px 5px red;
+   font-size:23px;
+   text-shadow: 2px 2px 5px #fa4235;
    font-family: 'Brush Script MT', cursive;
    font-weight: bold;
   
 }
+.caja{
+  text-align:center;
+  font-size:13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background:#243b55;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px #afbecf;
+  border-radius: 10px;
+
+}
+strong{
+  color:#f7630c;
+  font-size:18px;
+}
 p{
   margin: auto;
-  font-size:20px;
+  font-size:18px;
   color: white;
 }
 .formu{
