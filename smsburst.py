@@ -27,6 +27,7 @@ def resultado():
 
     return render_template('resultado.html',
             cel = cel,
+            mensaje = texto,
             respuesta = resp_end['success'],
             fecha = fecha,
             hora = hora,
