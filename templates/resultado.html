@@ -1,22 +1,23 @@
 {% extends 'base.html' %}
-
 {% block content %}
 
 {% if respuesta == True %}
-	<h2>Su Mensaje ha sido enviado al numero {{ cel }} correctamente :) !</h2>
-	<br/>
-	<hr>
-	<p>Mensaje enviado: {{ mensaje }}</p>
-	<hr/>
-	<hr>
-	<p>Tiempo: {{ hora }}</p>
-	<hr/>
-	<p>Fecha: {{ fecha }}</p>
-	<hr/>
+
+<h2>
+	message {{texto}} {{sms}} {{mensaje}} {{Mensaje}} {{text}}
+	✔️ Su Mensaje ha sido enviado al numero {{ cel }} correctamente :) !</h2>
+<br />
+<hr>
+<p>Tiempo: {{ hora }}</p>
+<hr />
+<p>Fecha: {{ fecha }}</p>
+<hr />
 {% else %}
-	<h2>Lo sentimos no se pudo enviar el mensaje al numero {{ cel }} ):</h2>
-	<br/>
-	<p>Debe esperar 24hrs para mandar otro mensaje nuevamente! :)</p>
+<h2>
+	❌ Lo sentimos no se pudo enviar el mensaje al numero {{ cel }} ):
+	<br /><input class="atras" type="button" onclick="history.back()" name="volver" value="volver">
+	<p>⏳ Debe esperar 24hrs para mandar otro mensaje nuevamente! :)
+	</p>
+</h2>
 {% endif %}
 {% endblock %}
-
