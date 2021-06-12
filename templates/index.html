@@ -3,18 +3,20 @@
 
 {% block content %}
 <center>
-<form action="{{ url_for('resultado') }}" method="POST">
-<p class="formu">
-<span class="texto" >☎Ingrese numero telefonico:</span>
-<input class="cel" type="tel" name="celular" placeholder="+591XXXXXXXXX" required />
-<br>
-<span class="texto" >&#x1F4AC;Ingrese su mensaje: </span>
-<input class="sms"  type="text" name="mensaje" placeholder="Mensaje" required>
-</p>
-<input class="btn" type="submit" value="Enviar"/>
-</form>
-</center>
+    <form action="{{ url_for('resultado') }}" method="POST" autocomplete="off">
 
+        <p class="formu">
+            <span class="texto">☎Ingrese número telefonico:</span>
+            <input class="cel" type="tel" size="5" maxlength="20" pattern="[0-9-+()]{5,20}" name="celular"
+                placeholder="+591XXXXXXXXX" required />
+            <br>
+            <span class="texto">&#x1F4AC;Ingrese su mensaje: </span>
+            <input class="sms" type="text" minlength="1" maxlength="100" name="mensaje" placeholder="Mensaje" required>
+        </p>
+        <input class="btn" type="submit" value="Enviar" />
+    </form>
+
+</center>
 {% endblock %}
 
 
