@@ -1,1 +1,0 @@
-en esta carpeta van los archivos estaticos para el frontend
