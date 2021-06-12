@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
-
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='imag/icono.png') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<script src="{{ url_for('static', filename='js/js.js') }}"></script>
 	<title>SmsBurst</title>
 </head>
+
 <body>
-	<p class="titulo">smsburst</p>
-	<center>
-<!---<img class="icon" src="css/icono2.png">-->
+
+	<div class="caja">
+		<img class="icon" src="{{ url_for('static', filename='imag/icono.png') }}">
+		<p class="titulo">smsburst</p>
+		<p><strong>¿Quieres enviar SMS desde Internet? </strong>
+			Prueba gratis el servicio de envío de SMS
+			Sí estas pensando en implementar un servicio de envío de SMS por
+			Internet en tu organización te puede resultar de interés
+
+		</p>
+
+
+		<hr />
+		{% block content %}
+
+		{% endblock %}
+		<hr />
+
+
+		<p>
+			Compranos un 🍦 por
+			<a target="_blank" href="https://www.paypal.com/paypalme/lpericena">paypal</a>
+			a cambio recibirás un 🎁
+
+
+		</p><strong>Autores:</strong>
+		<a target="_blank" href="https://twitter.com/Lpericena">Luishiño </a> &
+		<a target="_blank" href="https://twitter.com/Fbr1x1">fabrix </a>
+	</div>
 
 
 
 
-	</center>
-<!---	<p style="font-size:60px;text-align:right;">&#x1F4AD;</p>-->
-  <p style="font-size:90px;text-align:center">&#129409;</p>
-  
-	
-	<br/>
-<p><strong>Datos:</strong> informacion del proyecto:
-
-</p>
-	
-	<hr/>
-	{% block content %}
-
-	{% endblock %}
-	<hr/>
-	<br/>
-	
-
-	
 </body>
+
 </html>
+
+<script>
+	document.getElementsByClassName("cel")[0].value = "";
+	document.getElementsByClassName("sms")[0].value = "";
+
+</script>
