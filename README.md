@@ -18,7 +18,9 @@ Python3
 
 - Descrgar https://github.com/Pericena/smsburst
 - cd smsburst
-- python3 main.py
+- python main.py
+- python smsburst.py
+
 ```
 
 ## GNU/LINUX
